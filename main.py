@@ -1,64 +1,4 @@
-'''
-1 - Menu princial
-        criar 
-        - um menu com o nome do jogo
-        - um botão de começar que levará para a parte do jogo 
-        - colocar um musica de fundo (tema do star wars)
 
-2 - Jogo
-        criar:
-            - um sistema random que faça o alvo aparecer em locais aleatorios da tela
-            - um sistema que limite o tempo que o alvo fique na tela
-            - um sistema para limitar o espaço em que os alvos parecera
-        colocar:
-            - musica tema (pré feito, mas com bugs)
-            - efeitos de acerto e erro dos alvos
-
-3 - placar
-        usar:
-            - usar o time.time() para medir o tempo decorrido em cada alvo, ou time.perf_counter().
-'''
-
-
-'''
-#RELATORIO DA ULTIMA ATUALIZAÇÃO DO REFLEX TRAINER
-07/05/25
--Tentei fazer o sistema de randomização do circulo e funcionou e também consegui delimitar o
-espaço de randomização, agora só falta delimitar o tempo que um alvo fica na tela e
-fazer ele detectar o click e sumir o alvo.
--resolver bug da def musica_in_game()
-
-10/05/25
--Consegui fazer o circulo mudar depois de alguns segundos, podendo personalizar a vontade o tempo.
--Preciso fazer um jeito de sumir e aparecer um local aleatório da tela depois do mouse ter acertado
-o alvo.
-
-20/05/25
--
-'''
-
-
-'''
-[]JOGO
-    []MENU PRINCIPAL
-        []BOTÃO PARA IR PARA O JOGO
-        []CONFIGURAÇÕES
-
-    []GAMEPLAY
-        []ALVOS
-            []RANDOMIZAR ALVOS
-            []TEMPORIZAR OS ALVOS
-            []DIFICULDADE DINÂMICA
-            []CONTADOR DE VIDAS
-            []CONTADOR DE ACERTOS
-
-    []TELA PONTUAÇÃO (GAME OVER)
-        []PONTUAÇÃO
-        []BOTÃO PARA VOLTAR PARA O MENU PRINCIPAL
-        []BOTÃO PARA JOGAR NOVAMENTE
-    []PONTO DE SALVAMENTO DE PONTUAÇÃO(OPCIONAL)
-
-'''
 
 import math
 import sys
@@ -67,7 +7,7 @@ import pygame
 import random
 from imagens.imagens import botao_menu_rect, acerte_os_alvos_texto, icon, background_menu, acertos_e_vida, pontuacao_tela, botao_voltar_menu, alvo, background_jogo, tabela_de_pontuacao
 from sons.sounds import tiro_som, som_troca_dificuldade, som_tela_pontuacao, som_erro_tiro, music_in_game, music_menu
-# from tela_jogo import jogo
+
 
 # TAMANHO DA TELA
 LARGURA = 1600
